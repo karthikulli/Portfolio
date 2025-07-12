@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+:root {
+    --color-white: #ffffff;
+    --color-light: #828282;
+    --color-primary: #12e12e;
+    --color-dark: #212121;
+    --color-border: #7e686895;
+    --color-bg: #171717;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-white);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1,
+h2,
+h4,
+h5,
+p {
+    color: var(--color-white);
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 1rem 0;
+}
+
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--color-border);
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color: orange;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 31px;
+    color: var(--color-primary);
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 23px;
+}
+
+span {
+    color: var(--color-primary);
+    text-shadow: 0 0 10px blueviolet;
+}
+
+section {
+    margin-top: 200px;
+}
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .4s ease;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: white;
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.navbar {
+    background-color: var(--color-primary) !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: .5s;
+    width: 70px;
+}
+
+.nav-link:hover {
+    color: var(--color-bg) !important;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 30px;
+}
+
+header {
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.header-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sub_Headings {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-container,
+.services-container,
+.skills-container,
+.content,
+.form-top,
+.form-bottom {
+    margin-top: 2rem;
+}
+
+.services-container,
+.skills-container,
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.services-article,
+.skill-article,
+.card {
+    background-color: var(--color-dark);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 300px;
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.4s ease;
+}
+
+.services-article:hover,
+.skill-article:hover,
+.card:hover {
+    border-color: var(--color-primary);
+    border-width: 5px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .header-left,
+    .header-right {
+        flex: 1;
+    }
+
+    .form-top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+.img {
+    border-radius: 500px;
+}
+
+.form_bg_transparent {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.form_bg_transparent:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--color-border);
+}
